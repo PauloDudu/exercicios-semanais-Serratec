@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aula 09-07-2020- M</title>
+    </head>
+    <body>
+
+        <script>
+            /*
+                Hoje vamos aprender Array e metodos \o/
+
+                Fila: Primeiro que entra e o primeiro que sai -> linha
+                Pilha: Primeiro que entra e o ultimo que sai -> coluna
+                
+                fila.push()   ==> Adicionar um item no array
+                fila.shift()  ==> Remover o primeiro item
+                fila.pop()    ==> Remover o ultimo item
+                fila.splice() ==> Remover especificos 
+                    ex: fila.splice(4,1)
+                    -> 4 e onde comeca a retirar
+                    -> 1 e quantos vai retirar
+                fila.length() ==> Ver o tamanho da lista -> Quantos espacos existem na fila
+
+            */
+
+            var saladaDeFrutas = [];
+            var adicionarFrutas = true;
+
+            alert('Bem vindos a barraquinha de salada de frutas do proessor');
+            var nome = prompt('digite seu nome: ');
+
+            var fruta = prompt('Escolha uma fruta: ');
+            saladaDeFrutas.push(fruta);
+
+            while(adicionarFrutas){
+                var resposta = prompt("Deseja adicionar mais frutas - sim ou nao");
+
+                console.log(resposta);
+                
+                if(resposta == 'sim'){
+                    fruta = prompt('Escolha sua fruta: ');
+                    saladaDeFrutas.push(fruta);
+                }else{
+                    adicionarFrutas = false;
+                }
+
+            }
+            
+            document.write("Sua salada de fruta esta pronta ;) <br> <br>");
+            document.write("Frutas: <br>");
+
+            // for(var i = 0; i < saladaDeFrutas.lengh; i++){
+            //     document.write(saladaDeFrutas[i]);
+            // }
+
+            /*
+                <====================================================================>
+             
+                Aqui cada item e criado dinamicamente de acordo com o lenght do array
+
+                for(f of saladaDeFrutas){
+                    document.write(f + '<br>')
+        
+
+
+                Aqui ele devolve a propriedade -> posicao do item no array
+
+                for(f in saladaDeFrutas){
+                    document.write(f + '<br>')
+                }
+
+            */
+
+            /*   Tenho que saber mais sobre: 
+
+                variaveis
+                condicionais / decisoes
+                loops 
+                array (Pilha, Fila) / repeticao 
+                escopos
+                inputs e outputd
+                funcoes
+                objetos
+            */
+                
+
+        </script>
+
+    </body>
+
+</html>

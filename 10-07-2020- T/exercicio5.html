@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+
+            /*     O Diego possuia as habilidades: Javascript, ReactJs e Redux
+                   O Gabriel possui as habilidades: VueJs, Ruby on rails e Elixir
+            */
+            
+                /*
+                    function mostrarH(){
+                        document.write(`O ${usuarios[0].nome} possui as habilidades: ${usuarios[0].habilidades} <br>`);
+                        document.write(`O ${usuarios[1].nome} possui as habilidades: ${usuarios[1].habilidades}`);
+                     };
+                
+            
+                    mostrarH();
+                */
+                var usuarios = [
+                {
+                    nome: "Diego",
+                    habilidades: ["Javascript", "ReactJs", "Redux"]
+                },
+                {
+                    nome: "Gabriel",
+                    habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+                }
+                ];
+
+                function informar(usuarios){
+                    for(value of usuarios){
+                    usuarios = value.nome;
+                    skills = value.habilidades;
+                    skills.join();
+                    console.log(`O ${usuarios} possui as habilidades: ${skills}.`)};
+
+                }
+                informar(usuarios)
+
+            
+        </script>
+        
+    </body>
+</html>

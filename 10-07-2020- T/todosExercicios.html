@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <input type="button" onclick="ondeMora()" value="Executar exercicio1"><br><br>
+        <input type="button" onclick="contador()" value="Executar exercicio2"><br><br>
+        <input type="button" onclick="mostraH()" value="Executar exercico3"><br><br>
+        <input type="button" onclick="xpInLife()" value="Executar exercicio4">><br><br>
+        <input type="button" onclick="informar()" value="Executar exercicio5">
+        
+
+
+        <script>
+
+             function ondeMora (){
+                document.write("O usuario mora em " + endereco.cidade + " / ")
+                document.write(endereco.uf + ", no bairro " + endereco.bairro)
+                document.write(' na rua "' + endereco.rua + '" com n° ' + endereco.numero + '.')
+            }
+
+
+            var endereco = {
+                rua: "Rua dos pinheiros",
+                numero: "1293",
+                bairro: "Centro",
+                cidade: "Sao Paulo",
+                uf: "SP"
+            };
+
+            
+            function contador(){
+
+                var a = parseInt(prompt("Escolha o valor inicial: "));            
+                var b = parseInt(prompt("Escolha o valor final: "));
+                               
+
+                for(i=a; i <= b; i++){
+                    
+                    if(i % 2 == 0){
+                        document.write(" " + i + " Esse valor é par!" +'<br>')
+                    }
+
+                }
+                
+            }
+
+            
+
+           function mostraH(skills){
+              var skills = ["Javascript", "ReactJS", "React Native"];
+
+               if(skills.indexOf('Javascript') != -1){
+                   document.write("true");
+               }else {
+                   document.write("false")
+               }
+           }
+
+           
+           
+            function xpInLife(){
+                var a = parseInt(prompt("A quantos anos voce trabalha?"));
+
+                if(a==0 && a<=1){
+
+                    document.write("Iniciante");
+
+                }else if(a > 1 && a <= 3 ){
+
+                    document.write("Intermediario");
+
+                }else if(a > 3 && a <= 6){
+
+                    document.write("Avançado");
+
+                }else if(a > 6){
+
+                    document.write("Jedi Master")
+                }
+            }
+
+            
+
+                function informar(){
+                    var usuarios = [
+                {
+                    nome: "Diego",
+                    habilidades: ["Javascript", "ReactJs", "Redux"]
+                },
+                {
+                    nome: "Gabriel",
+                    habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+                }
+                ];
+
+                    for(value of usuarios){
+                    usuarios = value.nome;
+                    skills = value.habilidades;
+                    skills.join();
+                    document.write(`O ${usuarios} possui as habilidades: ${skills}.<br>`)};
+
+                }
+
+            
+           
+
+            
+        </script>
+    </body>
+</html>

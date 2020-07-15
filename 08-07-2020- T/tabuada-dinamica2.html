@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <script>
+             
+            /*  
+                ValorE --> valor escolhido
+                ValorL --> Valor limite 
+            */
+
+            const valorE = parseInt(prompt("Digite o valor a ser multiplicado na tabuada: "));
+            var valorL = parseInt(prompt("Digite o valor ate quandoo multiplicar: "));
+
+        
+            for(i = 0; i <= valorL; i++){
+                var resultado = i * valorE;
+                document.write(i + " x " + valorE + " = " + resultado + "  | ");
+
+                if(resultado%2 != 0){
+                    document.write('O resultado da multipcicacao e impar' + '<br>');
+                } else {
+                    document.write('O resultado dessa multiplicacao e par' + '<br>');
+                }
+
+            }
+
+
+
+        </script>
+    
+    </body>
+</html>

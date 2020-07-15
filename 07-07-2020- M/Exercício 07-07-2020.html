@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cauculadora de media</title>
+    </head>
+        <body>
+            <script>
+                /* EPER = Entender - Planejar - Executar - Revisar
+
+                    planejamento:
+
+                    1 como obter as 4 notas
+                    2 como transformar essas notas em numeros
+                    3 como somar as notas 
+                    4 como fazer a media
+                    5 como mostrar a soma e a media ao usuario
+                */
+                var nome = prompt('Digite seu nome: ');
+                alert('Bem vindo(a) ' + nome + ' a nossa pagina!');
+                alert('Esssa é a cauculadora da media entre 4 notas!');
+                 
+                 var nota1 = parseInt(prompt('Digite a primeira nota: '));
+                 var nota2 = parseInt(prompt('Digite a segunda nota: '));
+                 var nota3 = parseInt(prompt('Digite a terceira nota: '));
+                 var nota4 = parseInt(prompt('Digite a quarta nota: '));
+
+                 var soma = nota1 + nota2 + nota3 + nota4;
+                 var media = soma / 4;       
+                  
+                 document.write('A soma entre as notas é: ' + soma);        
+                 document.write(' e sua média das quatro notas é: ' + media);
+
+            </script>
+         </body>
+</html>

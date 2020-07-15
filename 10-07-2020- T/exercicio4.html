@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            
+            var N1 = parseInt(prompt("A quantos anos voce trabalha?"));
+           
+            function xpInLife(a){
+
+                if(a==0 && a<=1){
+
+                    document.write("Iniciante");
+
+                }else if(a > 1 && a <= 3 ){
+
+                    document.write("Intermediario");
+
+                }else if(a > 3 && a <= 6){
+
+                    document.write("Avançado");
+
+                }else if(a > 6){
+
+                    document.write("Jedi Master")
+                }
+            }
+            xpInLife(N1);
+
+        </script>
+        
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dever 1</title>
+    </head>
+    <body>
+        
+        <script>
+            function ondeMora (){
+                document.write("O usuario mora em " + endereco.cidade + " / ")
+                document.write(endereco.uf + ", no bairro " + endereco.bairro)
+                document.write(' na rua "' + endereco.rua + '" com n° ' + endereco.numero + '.')
+            }
+
+
+            var endereco = {
+                rua: "Rua dos pinheiros",
+                numero: "1293",
+                bairro: "Centro",
+                cidade: "Sao Paulo",
+                uf: "SP"
+            };
+
+            /* retornar --> O usuario more em Sao Paulo / SP, no bairro Centro, na 
+               rua "Rua dos pinheiros" com n° 1293.
+            */
+
+            
+            ondeMora()
+
+
+        </script>
+
+    </body>
+</html> 

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+
+            var N1 = parseInt(prompt("Escolha o valor inicial: "));            
+            var N2 = parseInt(prompt("Escolha o valor final: "));            
+
+            function positivo(a,b){
+
+                for(i=a; i <= b; i++){
+                    
+                    if(i % 2 == 0){
+                        document.write(" " + i + " Esse valor é par!" +'<br>');
+                    };
+
+                };
+            };
+             function negativo(a,b){
+
+                for(i=a; i >= b; i-1){
+                    
+                    if(i % 2 == 0){
+                        document.write(" " + i + " Esse valor é par!" +'<br>');
+                    };
+
+                };
+            };
+            
+            
+            if(N1 > N2){
+                negativo(N1,N2);
+            }else{
+                positivo(N1,N2);
+            }
+            
+
+        </script>
+        
+    </body>
+</html>
